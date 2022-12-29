@@ -11,665 +11,725 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-   /* General Styles */
-
    html {
-    font-size: 16px;
-   }
-
-   body {
-    font-family: 'Open sans', sans-serif;
+    color: #222;
     font-size: 1em;
-    text-align: left;
-   }
-
-   ul,
-   ol {
-    list-style: none;
-   }
-
-   a {
-    color: #e2e3ed;
-    text-decoration: none;
-   }
-
-   h2 {
-    font-family: 'Poppings', sans-serif;
-    font-size: 1.875em;
-    padding: 20px 0;
-   }
-
-   h3,
-   h4 {
-    font-family: 'Poppings', sans-serif;
-    font-size: 1.125em;
-   }
-
-   p {
-    font-size: .875em;
-    line-height: 1.285;
-   }
-   address {
-    font-style: normal;
-   }
-
-   .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
-
-   }
-
-   /*------------------Base header - Footer styles ------------------------ */
-
-   header,
-   footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
-
-   header {
-    padding: 15px 0;
-   }
-
-   header .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 0;
-   }
-
-   .content-wrapper {
-    width: 90%;
-   }
-
-   header .header-divider {
-    width: 100%;
+    line-height: 1.4;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
     height: 1px;
-    margin: 10px 0 20px 0;
-   }
-
-   header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 60%;
-   }
-
-   header nav ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-   }
-
-   footer {
-    flex-direction: column;
-   }
-
-   footer .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-
-   footer .social-icons p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-
-   footer .content-wrapper {
-    width: 55%;
-    margin: 50px 0;
-    /*test 65% later*/
-   }
-
-   footer .footer-contact {
-    margin-bottom: 50px;
-   }
-
-   footer p {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
     margin: 0;
-   }
-
-   footer .copyright {
-    margin: 20px 0;
-   }
-
-   /*---------------------------- Moblie styles- Homepage ---------------*/
-   .hero-area {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-   }
-
-   aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
-
-   .features {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
-
-   .features h2 {
-     margin-bottom: 60px;
-   }
-
-   .features .features-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
-
-   .features .content-wrapper {
-    width: 90%;
-   }
-
-   .features article {
-    width: 65%;
-   }
-
-   .features p {
-    margin: 0;
-   }
-
-   .reviews {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-   }
-
-   .reviews h3 {
-    width: 55%;
-    margin: 20px 0;
-   }
-
-  /* ==========================================================================
-   About Page
-   ========================================================================== */
-
-   .mission {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
-
-   .contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
-
-   .contact-section p {
-    margin: 0;
-   }
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
   
   /* ==========================================================================
-   FAQ Page
-   ========================================================================== */
-
-   .questions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-   }
-
-   .questions .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 50px 0 0 0;
-   }
-
-   .questions h2 {
-    margin-bottom: 40px;
-   }
-
-   .frequently-asked {
-    margin-bottom: 50px;
-   }
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 786px) {
-  /*tablet styles here*/
-  .content-wrapper {
-    max-width: 640px;
-    margin: 100px 0;
+     Author's custom styles
+     ========================================================================== */
+  
+     /* General Styles */
+  
+     html {
+      font-size: 16px;
+     }
+  
+     body {
+      font-family: 'Open sans', sans-serif;
+      font-size: 1em;
+      text-align: left;
+      color: #e2e3ed;
+     }
+  
+     ul,
+     ol {
+      list-style: none;
+     }
+  
+     a {
+      color: #e2e3ed;
+      text-decoration: none;
+     }
+  
+     h2 {
+      font-family: 'Poppings', sans-serif;
+      font-size: 1.875em;
+      padding: 20px 0;
+      font-weight: 500;
+     }
+  
+     h3,
+     h4 {
+      font-family: 'Poppings', sans-serif;
+      font-size: 1.125em;
+      font-weight: 500;
+     }
+  
+     p {
+      font-size: .875em;
+      line-height: 1.285;
+     }
+     address {
+      font-style: normal;
+     }
+  
+     .content-wrapper {
+      width: 90%;
+      margin: 50px 0;
+  
+     }
+  
+     /*------------------Base header - Footer styles ------------------------ */
+  
+     header,
+     footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      background-color: #202322;
+     }
+  
+     header {
+      padding: 15px 0;
+     }
+  
+     header .content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      margin: 0;
+     }
+  
+     .content-wrapper {
+      width: 90%;
+     }
+  
+     header .header-divider {
+      width: 100%;
+      height: 1px;
+      margin: 10px 0 20px 0;
+      background: #3a3a3a;
+     }
+  
+     header nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      width: 60%;
+     }
+  
+     header nav ul {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+     }
+  
+     header nav ul li {
+      font-size: 1.125em;
+     }
+  
+     footer {
+      flex-direction: column;
+      text-align: center;
+     }
+  
+     footer .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+  
+     footer .social-icons p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+  
+     footer .content-wrapper {
+      width: 55%;
+      margin: 50px 0;
+      /*test 65% later*/
+     }
+  
+     footer .footer-contact {
+      margin-bottom: 50px;
+     }
+  
+     footer p {
+      margin: 0;
+     }
+  
+     footer .copyright {
+      margin: 20px 0;
+     }
+  
+     /*---------------------------- Moblie styles- Homepage ---------------*/
+     .hero-area {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+     }
+  
+     .hero-area h1 {
+      font-size: 2.25em;
+      font-family: 'Poppings', Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      line-height: 1.2;
+     }
+  
+     aside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      background-color: #527158;
+     }
+  
+     aside .form {
+      margin-top: 30px;
+    }
+     
+    input[type=text] {
+      box-sizing: border-box;
+      width: 100%;
+      color: #2a423a;
+      font-style: italic;
+      padding: 1em;
+    }
+     
+    input[type=button] {
+      width: 100%;
+      padding: 20px 0;
+      margin-top: 20px;
+      background-color: #2a423a;
+      font-family: 'Poppins', Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 1.125em;
+      color: #e2e3ed;
+      border: none;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  
+     .features {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+     }
+  
+     .features h2 {
+       margin-bottom: 60px;
+     }
+  
+     .features .features-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+     }
+  
+     .features .content-wrapper {
+      width: 90%;
+     }
+  
+     .features article {
+      width: 63%;
+      margin: 30px 0;
+     }
+  
+     .features p {
+      margin: 0;
+     }
+  
+     .reviews {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      background-color: #2a423a;
+     }
+  
+     .reviews h2 {
+      margin-bottom: 40px;
+      line-height: 1;
+     }
+  
+     .reviews h3 {
+      width: 55%;
+      margin: 20px 0;
+     }
+  
+    /* ==========================================================================
+     About Page
+     ========================================================================== */
+  
+     .mission {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      background-color: #527158;
+     }
+  
+     .contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      background-color: #2a423a;
+     }
+  
+     .contact-section p {
+      margin: 0;
+     }
+    
+    /* ==========================================================================
+     FAQ Page
+     ========================================================================== */
+  
+     .questions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      background-color: #527158;
+     }
+  
+     .questions .content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      margin: 50px 0 0 0;
+     }
+  
+     .questions h2 {
+      margin-bottom: 40px;
+      line-height: 1;
+     }
+  
+     .frequently-asked {
+      margin-bottom: 50px;
+     }
+  
+     .frequently-asked h4 {
+      line-height: 1.333;
+     }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden,
+  [hidden] {
+    display: none !important;
   }
-
-  header {
-    justify-content: space-around;
-    padding: 33px 0;
+  
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
   }
-
-  header .content-wrapper {
-    width: 100%;
-    justify-content: center;
-  }
-
-  header nav{
-    width: 20%
-  }
-
-  header nav ul {
-    justify-content: space-between;
-  }
-
-  .header-divider {
-    display: none;
-  }
-  /*hero area */
-
-  /* aside */
-  aside .content-wrapper {
-    margin: 50px 0;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-  }
-
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    width: 40%;
+  
+  /*
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
     margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
   }
-
-  /* Features */
-   .features article {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: column wrap;
-    flex-basis: 50%;
-   }
-
-   .features .features-items-description {
-    width: 50%;
-   }
-
-   /* Reviews */
-   .reviews article {
-    display: flex;
-    justify-content: space-between;
-   }
-
-   .reviews article div {
-    width: 49%;
-   }
-
-   /*footer*/
-   footer .content-wrapper {
-    width: 65%;
-    margin:100px 0;
-   }
-
-   .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   }
-
-   footer .footer-contact {
-    margin-bottom: 0;
-   }
-
-   footer .copyright {
-    width: 100%;
-   }
-   /* ==========================================================================
-   About Page
-   ========================================================================== */
- 
-   .mission-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
   }
-
-    .mission-content p {
-    width: 45%;
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
+    content: " ";
+    display: table;
   }
-
-    .contact-section .content-wrapper h2 {
-    width: 80%;
+  
+  .clearfix::after {
+    clear: both;
   }
-
-    .contact-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 786px) {
+    /*tablet styles here*/
+    .content-wrapper {
+      max-width: 640px;
+      margin: 100px 0;
+    }
+  
+    header {
+      justify-content: space-around;
+      padding: 33px 0;
+    }
+  
+    header .content-wrapper {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav{
+      width: 20%
+    }
+  
+    header nav ul {
+      justify-content: space-between;
+    }
+  
+    .header-divider {
+      display: none;
+    }
+    /*hero area */
+  
+    /* aside */
+    aside .content-wrapper {
+      margin: 50px 0;
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+    }
+  
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 40%;
+      margin: 0;
+    }
+  
+    /* Features */
+     .features article {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: column wrap;
+      flex-basis: 50%;
+     }
+  
+     .features .features-items-description {
+      width: 50%;
+     }
+  
+     /* Reviews */
+     .reviews article {
+      display: flex;
+      justify-content: space-between;
+     }
+  
+     .reviews article div {
+      width: 49%;
+     }
+  
+     /*footer*/
+     footer .content-wrapper {
+      width: 65%;
+      margin:100px 0;
+     }
+  
+     .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     }
+  
+     footer .footer-contact {
+      margin-bottom: 0;
+     }
+  
+     footer .copyright {
+      width: 100%;
+     }
      /* ==========================================================================
-   FAQ page
-   ========================================================================== */
-   .questions .content-wrapper {
-    justify-content: space-between;
-   }
-
-   .frequently-asked {
-    flex-basis: 40%;
-   }
-
-   .frequently-asked h2{
-    width: 100%;
-   }
-}
-
-@media only screen and (min-width: 1200px) {
-  /*Computer styles here*/
-  .content-wrapper {
-    width: 960px;
+     About Page
+     ========================================================================== */
+   
+     .mission-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+    }
+  
+      .mission-content p {
+      width: 45%;
+    }
+  
+      .contact-section .content-wrapper h2 {
+      width: 80%;
+    }
+  
+      .contact-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+       /* ==========================================================================
+     FAQ page
+     ========================================================================== */
+     .questions .content-wrapper {
+      justify-content: space-between;
+     }
+  
+     .frequently-asked {
+      flex-basis: 40%;
+     }
+  
+     .frequently-asked h2{
+      width: 100%;
+     }
   }
-  /*Hero area*/
-  .hero-area h1{
-    width: 60%;
+  
+  @media only screen and (min-width: 1200px) {
+    /*Computer styles here*/
+    .content-wrapper {
+      width: 960px;
+    }
+    /*Hero area*/
+    .hero-area h1{
+      width: 60%;
+    }
+  
+    /*aside*/
+    aside .content-wrapper {
+      justify-content: space-between;
+    }
+  
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 30%;
+    }
+  
+    /*features*/
+    .features h2 {
+      width: 90%;
+    }
+  
+    .features article {
+      flex-basis: 33%;
+    }
+  
+    /*reviews*/
+    .reviews article div {
+      width: 42%;
+    }
+    /* ==========================================================================
+     About Page
+     ========================================================================== */
+     .mission h2,
+     .contact-section .content-wrapper h2 {
+      width: 95%;
+     }
+  
+    /* ==========================================================================
+     FAQ page
+     ========================================================================== */
+  
+     .questions h2 {
+      width: 100%;
+     }
   }
-
-  /*aside*/
-  aside .content-wrapper {
-    justify-content: space-between;
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
   }
-
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    width: 30%;
-  }
-
-  /*features*/
-  .features h2 {
-    width: 90%;
-  }
-
-  .features article {
-    flex-basis: 33%;
-  }
-
-  /*reviews*/
-  .reviews article div {
-    width: 42%;
-  }
+  
   /* ==========================================================================
-   About Page
-   ========================================================================== */
-   .mission h2,
-   .contact-section .content-wrapper h2 {
-    width: 95%;
-   }
-
-  /* ==========================================================================
-   FAQ page
-   ========================================================================== */
-
-   .questions h2 {
-    width: 100%;
-   }
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+      display: table-header-group;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
   }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
+  
+  
