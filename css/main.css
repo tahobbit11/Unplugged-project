@@ -307,7 +307,7 @@
        margin-bottom: 60px;
      }
   
-     .features .features-items {
+     .features .features-items-description {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -326,6 +326,11 @@
      .features p {
       margin: 0;
       text-align: center;
+     }
+
+     .features i {
+      font-size: 3.75em;
+      margin-bottom: 40px;
      }
   
      .reviews {
